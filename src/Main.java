@@ -58,11 +58,33 @@ public class Main {
             System.out.println("Если возвраст ребенка " + boy + ", то можно кататься на аттракционе в сопровождении.");
         }
         int teenager = 16;
-        if(teenager > 14){System.out.println("Если возвраст ребенка " + teenager + ", то можно кататься на аттракционе без сопровождения взрослого.");
+        if (teenager > 14) {
+            System.out.println("Если возвраст ребенка " + teenager + ", то можно кататься на аттракционе без сопровождения взрослого.");
         }
 
 
         System.out.println("Задание 6");
+        int totalPlaces = 102;
+        int seatingPlaces = 60;
+        int passengers = 62;
+        if (passengers < seatingPlaces) {
+            System.out.println("В вагоне есть сидячие места.");
+        } else if (passengers < totalPlaces) {
+            System.out.println("Поехать можно только стоя.");
+        } else {
+            System.out.println("Нет мест.");
+        }
+        System.out.println("Задание 7");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one >= two && one >= three){
+            System.out.println("Число "+ one + " больше.");
+        }
+        else if (two >= one && two >= three) {
+            System.out.println("Число "+ two + " больше.");
+        }
+        else { System.out.println("Число "+ three + " больше.");}
 
 
 
